@@ -1,0 +1,36 @@
+.home{
+    padding-top: 50px;
+}
+
+.box{
+    display: flex;
+    background: black;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.movie{
+    display: flex;
+    flex-direction: column;
+    background: orange;
+    color: white;
+width: 250px;
+height: 350px;
+transition: background  0.5s;
+margin: 15px;
+
+}
+.movie img{
+    width: 250px;
+    height: 250px;
+    translate: -5px -5px 0;
+    cursor: pointer;
+    
+   
+    
+}
+.movie :hover{
+    translate: -10px -10px 0;
+}

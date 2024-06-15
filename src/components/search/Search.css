@@ -1,0 +1,83 @@
+.search{
+    background: url('');
+    position: relative;
+    width: 80%;
+    margin: 50px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    
+}
+.search button{
+    display: flex;
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+    padding: 10px;
+    background: red;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+  
+    
+}
+.search-results ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-results  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.results-of-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.results-of-search span, p{
+    color: white;
+    margin: 10px;
+    width: 200px;
+}
+.results-of-search h4{
+    color: red;
+    padding: 5px;
+    
+    border-radius: 5px;
+    background: yellow;
+}
+.results-of-search img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    background: no-repeat, white;
+}
+
+.search-input input{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background: rgb(206, 191, 191);
+    border: 2px solid orange;
+}
+.search-input .fasearch{
+    position: absolute;
+    font-size: 25px;
+    color: red;
+    left: 240px;
+    z-index: 999;
+    top: 5px;
+    cursor: pointer;
+}
