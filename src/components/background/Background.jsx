@@ -32,15 +32,15 @@ const Background = () => {
      
 
       <div className='overlay'>
-        
+      <div className="navlink-mother">
       <div className="homeNav">
-        <div style={{display:"flex"}}>
+      
+       
           <div  className='Mother-bgUl'>
             <h1 style={{color:"white", fontSize:"30px", margin:"5px"}}>
                <Rotate/>
             </h1>
             </div>
-
           <div  className='Mother-bgUl '>
          
           <FaInstagram  className='bgUl'/>
@@ -56,13 +56,14 @@ const Background = () => {
           
             
           </div>
-          <div className='Mother-bgUl'>
+          <div className='Mother-bgUl mother-animation-button '>
             <div className='stick'></div>
 
             <FaShoppingBag  className='bgUl'/>
            <Link to={'/about'}> <Button className='bgUl'/></Link>
             <ProductSearch className='bgUl'/>
           </div>
+         
           
         </div>
         
