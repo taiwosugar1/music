@@ -155,10 +155,13 @@ margin-left: -50px;
     padding: 0px;
     background: transparent;
     width: 90%;
-    margin-left: -50px;
+    
     height: auto;
     border-bottom: 2px solid grey;
     
+}
+.nav{ 
+  margin-left: -50px;
 }
  
   .Mother-bgUl{
@@ -167,8 +170,11 @@ margin-left: -50px;
     justify-content: center;
    
   }
+  .stick{
+    display: none;
+  }
     .mother-animation-button .bgUl{
-    margin: 20px;
+    margin:20px 40px;
     font-size: 20px;
     
    }
@@ -185,6 +191,7 @@ margin-left: -50px;
     margin-left: 0;
    
   }
+
   .bgUl{
     color: white;
     font-size: 12px;

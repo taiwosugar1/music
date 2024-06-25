@@ -44,7 +44,7 @@ const Background = () => {
             
             </div>
           <div className='Mother-bgUl link-nav'>
-             <Nav className='bgUl'/>
+             <Nav className='bgUl nav'/>
           </div>
 
           <div className='Mother-bgUl mother-animation-button '>
