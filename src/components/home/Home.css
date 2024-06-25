@@ -13,6 +13,9 @@
     padding: 10px;
     list-style: none;
     z-index: 10000;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 7px;
 }
 
 .box-movies-list{
@@ -31,27 +34,31 @@
 
 .movie{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background: orange;
     color: white;
 width: 250px;
-height: 350px;
+height: 400px;
 transition: background  0.5s;
 margin: 15px;
 
 }
 .movie img{
     width: 250px;
-    height: 250px;
+    height: 180px;
     translate: -5px -5px 0;
     cursor: pointer;
-    
-   
     
 }
 .movie :hover{
     translate: -10px -10px 0;
 }
+.movie div hr{
+   display: none;
+}
+
 
 @media screen and (max-width: 480px) {
     .home{
@@ -62,22 +69,24 @@ margin: 15px;
     .box-movies-list{
         padding-top: 50px;
         display: grid;
-        grid-template-columns: auto auto ;
+        grid-template-columns: auto ;
         place-content: center;
     }
     .movie{
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         background: orange;
         color: white;
-        width: 200px;
-        height: 300px;
+        width:350px;
+        height: 500px;
         transition: background  0.5s;
         margin: 5px;
-    
+        padding-bottom: 20px;
     }
     .movie img{
-        width: 200px;
+        width: 350px;
         height: 200px;
         translate: -5px -5px 0;
         cursor: pointer;  
@@ -86,5 +95,13 @@ margin: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        line-height: 14px;
+    }
+    .movie div hr{
+        width: 100%;
+        color: grey;
+        display: flex;
+        font-weight: 100;
     }
 }

@@ -74,7 +74,8 @@
     height: 100%;
     object-fit: cover;
     Filter: grayscale(100%);
-    animation: slowMotion 300s infinite linear; /* Adjust duration as needed */
+    animation: slowMotion 300s infinite linear;
+     /* Adjust duration as needed */
 }
 
 
@@ -143,6 +144,9 @@ margin-left: -50px;
   font-size: 12px;
 }
 
+
+/* -------------Mobile screen------------- */
+
 @media screen and (max-width: 480px) {
   .homeNav {
     display: flex;
@@ -163,19 +167,14 @@ margin-left: -50px;
     justify-content: center;
    
   }
-  /* .mother-animation-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  } */
+
   .navlink-mother{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    z-index: 10000;
+  
   }
   .link-nav{
     margin-left: 0;

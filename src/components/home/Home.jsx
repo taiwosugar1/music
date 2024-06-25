@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './Home.css'
-import studio from '../../Assets/studio.jpg'
 import {  FaCalendar, FaMusic } from 'react-icons/fa'
 import Rotate2 from '../rotate/Rotate2'
 import { Link } from 'react-router-dom'
@@ -25,7 +24,7 @@ const Home = () => {
              <Rotate2/>
              <h3><span style={{color:'royalblue'}}>W</span>orks</h3> 
     <ul>
-      <li style={{color:"royablue", fontWeight:"600"}}onClick={()=>setData(Categories)}>All</li>
+      <li onClick={()=>setData(Categories)}>All</li>
       <li onClick={()=>filterResult('web')}> Web development</li>
       <li onClick={()=>filterResult('print')}>Printing Production</li>
     </ul>
@@ -43,16 +42,18 @@ const Home = () => {
                       <Link to={weblink}>
                       <img src={image} alt="" />
                       </Link>
-                      
+                      <div >
                     <h3>{name}</h3>
+                    <hr />
                     <p>{profession}</p>
-                    <div >
-                   <FaMusic/>
-                  <p>{season}</p>
-                   <FaCalendar/>
-                   <p>{date}</p>
-                 </div>
+                    
+                  
+                  <p> <FaMusic/> {season}</p>
+                   
+                   <p><FaCalendar/> {date}</p>
+                    <hr />
                    <p>#5: Some things I'll never forget   </p>
+                  </div>
                   </div>
              </div>
           
@@ -73,7 +74,7 @@ export const Categories = [
   {
     id: 1,
     name: "E-commerce Sell App",
-    image: 'image/web7-image.png',
+    image: 'https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg?auto=compress&cs=tinysrgb&w=600',
     profession: "E-commerce App",
     category: "web",
     weblink:"https://product-kappa-beryl.vercel.app/",
@@ -84,7 +85,7 @@ export const Categories = [
   {
   id: 2,
   name: "E-commerce Web Development",
-  image: 'image/web1-image.png',
+  image: 'https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&w=600',
   profession: "Web development",
   category: "web",
   weblink:"https://new-ecommerce-sooty.vercel.app//"
@@ -92,7 +93,7 @@ export const Categories = [
 {
   id: 3,
   name: "Social Media Application",
-  image: 'image/web2-image.png',
+  image: 'https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=600',
   profession: "Web development",
   category: "web",
  weblink:"https://my-react-beta.vercel.app/"
@@ -100,7 +101,7 @@ export const Categories = [
 {
   id: 4,
   name: "Professional Website",
-  image: 'image/web3-image.png',
+  image: 'https://images.pexels.com/photos/1876279/pexels-photo-1876279.jpeg?auto=compress&cs=tinysrgb&w=600',
   profession: "Web development",
   category: "web",
   weblink:"https://my-css-layout-project.vercel.app/"
@@ -108,7 +109,7 @@ export const Categories = [
 {
   id: 5,
   name: "Company Website",
-  image: 'image/web4-image.png',
+  image: 'Images/pexels-wendywei-1190297.jpg',
   profession: "Web development",
   category: "web",
   weblink:"https://multibrand-digital.vercel.app/"
@@ -116,7 +117,7 @@ export const Categories = [
 {
   id: 6,
   name: "Music Web Application",
-  image: 'image/web5-image.png',
+  image: 'Images/pexels-sebastian-ervi-866902-1763075.jpg',
   profession: "Web Aoolications",
   category: "web",
   weblink:"https://music-eight-rose.vercel.app/"
@@ -125,7 +126,7 @@ export const Categories = [
 {
   id: 7,
   name: "Company / Product Branding",
-  image: 'image/metaphor.png',
+  image: 'Images/pexels-joshsorenson-995301.jpg',
   profession: "Signage Branding",
   category: "print",
   weblink:"https://www.instagram.com/p/Cw9kaeiMzha/"
