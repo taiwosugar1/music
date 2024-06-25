@@ -167,6 +167,11 @@ margin-left: -50px;
     justify-content: center;
    
   }
+    .mother-animation-button .bgUl{
+    margin: 20px;
+    font-size: 20px;
+    
+   }
 
   .navlink-mother{
     display: flex;

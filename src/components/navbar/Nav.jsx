@@ -1,8 +1,8 @@
 import React from 'react';
-import './Head.css';
+import './Nav.css';
 
 
-const Header = () => {
+const Nav = () => {
   return (
     <div className='head'>
        <header>
@@ -43,4 +43,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Nav

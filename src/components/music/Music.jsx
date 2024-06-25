@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Home.css'
+import './Music.css'
 import {  FaCalendar, FaMusic } from 'react-icons/fa'
 import Rotate2 from '../rotate/Rotate2'
 import { Link } from 'react-router-dom'
@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 // import { FaCalendar, FaFolder, FaTag } from 'react-icons/fa'
 // import studio from '../../Assets/studio.jpg'
 
-const Home = () => {
+const Music = () => {
   const [data, setData]=useState(Categories)
   const filterResult=(catItem)=>{
      const result=Categories.filter((curData)=>{
@@ -22,17 +22,18 @@ const Home = () => {
       
             
              <Rotate2/>
-             <h3><span style={{color:'royalblue'}}>W</span>orks</h3> 
+             
     <ul>
       <li onClick={()=>setData(Categories)}>All</li>
-      <li onClick={()=>filterResult('web')}> Web development</li>
-      <li onClick={()=>filterResult('print')}>Printing Production</li>
+      <li onClick={()=>filterResult('web')}> Christian Songs</li>
+      <li onClick={()=>filterResult('print')}>HipHop songs</li>
+      <li onClick={()=>filterResult('blue')}>Blues songs</li>
     </ul>
        
        <div className="box-movies-list">
 
     {data.map((values)=>{
-          const {id, name, image, weblink, profession, date, season}=values;
+          const {id, name, image, weblink, singer, date, season}=values;
 
         
           return(
@@ -45,7 +46,7 @@ const Home = () => {
                       <div >
                     <h3>{name}</h3>
                     <hr />
-                    <p>{profession}</p>
+                    <p>{singer}</p>
                     
                   
                   <p> <FaMusic/> {season}</p>
@@ -67,15 +68,15 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Music
 
 
 export const Categories = [
   {
     id: 1,
-    name: "E-commerce Sell App",
+    name: "When and Then",
     image: 'https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg?auto=compress&cs=tinysrgb&w=600',
-    profession: "E-commerce App",
+    singer: "John Wick",
     category: "web",
     weblink:"https://product-kappa-beryl.vercel.app/",
     date: "12th, sept. 2023",
@@ -84,17 +85,17 @@ export const Categories = [
   
   {
   id: 2,
-  name: "E-commerce Web Development",
+  name: "Must Go High",
   image: 'https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&w=600',
-  profession: "Web development",
-  category: "web",
+  singer: "Michael",
+  category: "blue",
   weblink:"https://new-ecommerce-sooty.vercel.app//"
 },
 {
   id: 3,
   name: "Social Media Application",
   image: 'https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&w=600',
-  profession: "Web development",
+  profession: "devop",
   category: "web",
  weblink:"https://my-react-beta.vercel.app/"
 },
@@ -134,50 +135,50 @@ export const Categories = [
 {
   id: 8,
   name: "Company Branding / Decoration",
-  image: 'image/signage.png',
+  image: 'Images/pexels-ellis-1389429.jpg',
   profession: "Company Branding",
   category: "print",
   weblink:"https://www.instagram.com/p/CwnJNQesPXT/"
 },
 {
   id: 9,
-  name: "Book Printing / Publication",
-  image: 'image/book2.png',
-  profession: "Book Publication",
+  name: "Be the Best",
+  image: 'Images/pexels-joshsorenson-995301 (1).jpg',
+ singer: "jake",
   category: "print",
   weblink:"https://www.instagram.com/p/CwcWf6bAeEw/"
 },
 {
   id: 10,
-  name: "Product Branding Box",
-  image: 'image/pizza.png',
-  profession: "Box Printing / Branding",
+  name: "Praise God",
+  image: 'Images/pexels-pixabay-33597.jpg',
+  sineger: "ann jen",
   category: "print",
   weblink:"https://www.instagram.com/p/C06cDWxM0IY/"
 },
 {
   id: 11,
-  name: "Carrier Bag Production",
-  image: 'image/bag-image.png',
-  profession: "Bag Printing ",
+  name: "Richard Jack",
+  image: 'Images/pexels-ashutoshsonwani-1762578.jpg',
+  singer: "Good Name ",
   category: "print",
   weblink:"https://www.instagram.com/p/C7Yjbb2MDr0/"
 },
 {
   id: 12,
-  name: "Diary Publication",
-  image: 'image/book-image.png',
-  profession: "Printing Production",
+  name: "Make Way",
+  image: 'Images/pexels-ferarcosn-191240.jpg',
+  singer: "John Brown",
   category: "print",
   weblink:"https://www.instagram.com/p/Clbw6WfsYJ9/"
 },
-// {
-//   id: 11,
-//   name: "Music Web Application",
-//   image: 'image/web5-image.png',
-//   profession: "Web Aoolications",
-//   category: "web",
-//   weblink:"https://music-eight-rose.vercel.app/"
-// },
+{
+  id: 12,
+  name: "Joy Must Come",
+  image: 'Images/pexels-foteros-352505.jpg',
+  singer: "millie",
+  category: "web",
+  weblink:"https://music-eight-rose.vercel.app/"
+},
 ]
 

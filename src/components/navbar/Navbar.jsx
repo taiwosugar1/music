@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import { Link } from 'react-router-dom'
 
 
 
@@ -9,10 +10,10 @@ const Navbar = () => {
     
       <div className="navbar">
         <nav>
-            <h1>envato<span style={{color:"green", background:"none"}}>market</span></h1>
+            <h1>Multibrand<span style={{color:"green", background:"none"}}>music</span></h1>
            
            
-            <button className='buy-now' >Buy now</button>
+           <Link to={"/music"}><button className='buy-now' >Buy now</button></Link> 
         </nav>
       </div>
   )

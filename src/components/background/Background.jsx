@@ -1,21 +1,15 @@
 import React from 'react';
 import './Background.css'
 
-import { FaCalendar, FaFolder, FaInstagram, FaMoon,  FaShoppingBag, FaTag, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaCalendar, FaFolder, FaInstagram, FaMoon,  FaSearch,  FaShoppingBag, FaTag, FaTwitter, FaYoutube } from "react-icons/fa";
 import studio from '../../Assets/studio.jpg'
 import backgroundVideo from '../../Assets/backgroundVideo.mp4'
-// import Drop1 from '../dropDown/Drop1';
-// import Drop2 from '../dropDown/Drop2';
-// import Drop3 from '../dropDown/Drop3';
-// import Drop4 from '../dropDown/Drop4';
-// import Drop5 from '../dropDown/Drop5';
-// import Drop6 from '../dropDown/Drop6';
-import ProductSearch from '../product/ProductSearch'
-import Head from '../navbar/Head';
+
+import Nav from '../navbar/Nav';
 import Button from '../button/Button';
 import { Link } from 'react-router-dom';
 import Rotate from '../rotate/Rotate';
-// import { Link } from 'react-router-dom';
+
 
 
 const Background = () => {
@@ -41,27 +35,24 @@ const Background = () => {
                <Rotate/>
             </h1>
             </div>
-          <div  className='Mother-bgUl '>
+          <div  className='Mother-bgUl mother-animation-button'>
          
-          <FaInstagram  className='bgUl'/>
+          <FaInstagram  className='bgUl  '/>
             <FaTwitter className='bgUl'/>
             <FaYoutube  className='bgUl'/>
             <FaMoon  className='bgUl'/>
             
             </div>
           <div className='Mother-bgUl link-nav'>
-            
-         
-             <Head className='bgUl'/>
-          
-            
+             <Nav className='bgUl'/>
           </div>
+
           <div className='Mother-bgUl mother-animation-button '>
             <div className='stick'></div>
 
             <FaShoppingBag  className='bgUl'/>
            <Link to={'/about'}> <Button className='bgUl'/></Link>
-            <ProductSearch className='bgUl'/>
+            <FaSearch className='bgUl'/>
           </div>
          
           
